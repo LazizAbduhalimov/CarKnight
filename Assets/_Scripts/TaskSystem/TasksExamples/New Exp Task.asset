@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f74d452219c2b0348929646781df08c1, type: 3}
+  m_Name: New Exp Task
+  m_EditorClassIdentifier: Assembly-CSharp::ExpTask
+  taskName: "\u041D\u0430\u0447\u0430\u043B\u043E.."
+  taskDescription: "\u0417\u0430\u043A\u043E\u043D\u0447\u0438 \u043E\u0431\u0443\u0447\u0435\u043D\u0438\u0435 "
+  color: {r: 0.3529412, g: 0.6039216, b: 0.67058825, a: 1}
+  icon: {fileID: 21300000, guid: 2b4b4be3229486248afbc937a6d927ee, type: 3}
+  taskMaxProgress: 1
+  taskProgress: 0
+  IsCompleted: 0

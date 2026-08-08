@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/_Core/_Scripts/SpawnerByDenis/Pointers.meta
+guid: c648f19ef96313d4e9d96ef640d7a987
+========
+guid: 08cab1e4fb593c04a95e2359d80d0f72
+>>>>>>>> feature/state_machine:Assets/_Core/_Scripts/Game/FSM.meta
+folderAsset: yes
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
