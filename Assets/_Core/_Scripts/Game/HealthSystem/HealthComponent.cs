@@ -1,0 +1,33 @@
+using System;
+using UnityEngine;
+
+public class HealthComponent : MonoBehaviour
+{
+    public int MaxHealth = 100;
+    public int CurrentHealth;
+    public Action<int, int, int> OnHealthChanged;
+    public Action OnDeath;
+
+    private void OnEnable()
+    {
+        CurrentHealth = MaxHealth;
+    }
+
+    public void TakeDamage(int damage)
+    {
+        var oldHealth = CurrentHealth;
+        CurrentHealth -= damage;
+        OnHealthChanged?.Invoke(oldHealth, CurrentHealth, MaxHealth);
+        if (CurrentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        OnDeath?.Invoke();
+        Debug.Log($"{gameObject.name} has died.");
+        gameObject.SetActive(false);
+    }
+}

@@ -1,0 +1,154 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7677185050043839319
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3261769753816550126}
+  - component: {fileID: 2009530307707248402}
+  - component: {fileID: 7493339297488042864}
+  m_Layer: 0
+  m_Name: ShootPet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3261769753816550126
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7677185050043839319}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -15.59637, y: 1.65, z: -63.56364}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 630636815810774404}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2009530307707248402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7677185050043839319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba1443d04a760e344a82c5f05919f41b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FollowingPet
+  _movementSpeed: 10
+  _rotationSpeed: 360
+--- !u!114 &7493339297488042864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7677185050043839319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2886ca09dd453424c923997bcb75cb3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Attacker
+  EnemyDetectionRange: 30
+  _enemyLayerMask:
+    serializedVersion: 2
+    m_Bits: 64
+  AttackType:
+  - rid: 6030889908105379841
+  references:
+    version: 2
+    RefIds:
+    - rid: 6030889908105379841
+      type: {class: AutoAimAttack, ns: , asm: Assembly-CSharp}
+      data:
+        IsActive: 1
+        Owner: {fileID: 0}
+        AttackRate: 0.1
+        MissilePrefab: {fileID: 5154465078395006275, guid: 5e7a5ddc1f170094f98829c05850873e, type: 3}
+        MissileSpeed: 40
+--- !u!1001 &2272247565994204083
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3261769753816550126}
+    m_Modifications:
+    - target: {fileID: 1677834716159139383, guid: 40160bb78de8b124cb2e8eedebaacf79, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.45466486
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677834716159139383, guid: 40160bb78de8b124cb2e8eedebaacf79, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.45466486
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677834716159139383, guid: 40160bb78de8b124cb2e8eedebaacf79, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.45466486
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677834716159139383, guid: 40160bb78de8b124cb2e8eedebaacf79, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.005723
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677834716159139383, guid: 40160bb78de8b124cb2e8eedebaacf79, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.68164
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677834716159139383, guid: 40160bb78de8b124cb2e8eedebaacf79, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.27225
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677834716159139383, guid: 40160bb78de8b124cb2e8eedebaacf79, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677834716159139383, guid: 40160bb78de8b124cb2e8eedebaacf79, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677834716159139383, guid: 40160bb78de8b124cb2e8eedebaacf79, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677834716159139383, guid: 40160bb78de8b124cb2e8eedebaacf79, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677834716159139383, guid: 40160bb78de8b124cb2e8eedebaacf79, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677834716159139383, guid: 40160bb78de8b124cb2e8eedebaacf79, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677834716159139383, guid: 40160bb78de8b124cb2e8eedebaacf79, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018471783065945229, guid: 40160bb78de8b124cb2e8eedebaacf79, type: 3}
+      propertyPath: m_Name
+      value: scifi-spaceship-raider
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1207638381170178513, guid: 40160bb78de8b124cb2e8eedebaacf79, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40160bb78de8b124cb2e8eedebaacf79, type: 3}
+--- !u!4 &630636815810774404 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1677834716159139383, guid: 40160bb78de8b124cb2e8eedebaacf79, type: 3}
+  m_PrefabInstance: {fileID: 2272247565994204083}
+  m_PrefabAsset: {fileID: 0}
